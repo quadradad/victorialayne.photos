@@ -172,6 +172,41 @@ const GALLERY = [
   "label": "Mountain Lake"
  },
  {
+  "src": "img/portfolio/seniors/35-willow-creek.jpg",
+  "cat": "seniors",
+  "label": "Willow Creek"
+ },
+ {
+  "src": "img/portfolio/seniors/36-willow-creek.jpg",
+  "cat": "seniors",
+  "label": "Willow Creek"
+ },
+ {
+  "src": "img/portfolio/seniors/37-willow-creek.jpg",
+  "cat": "seniors",
+  "label": "Willow Creek"
+ },
+ {
+  "src": "img/portfolio/seniors/38-willow-creek.jpg",
+  "cat": "seniors",
+  "label": "Willow Creek"
+ },
+ {
+  "src": "img/portfolio/seniors/39-willow-creek.jpg",
+  "cat": "seniors",
+  "label": "Willow Creek"
+ },
+ {
+  "src": "img/portfolio/seniors/40-willow-creek.jpg",
+  "cat": "seniors",
+  "label": "Willow Creek"
+ },
+ {
+  "src": "img/portfolio/seniors/41-willow-creek.jpg",
+  "cat": "seniors",
+  "label": "Willow Creek"
+ },
+ {
   "src": "img/portfolio/couples/01-tianna--layton.jpg",
   "cat": "couples",
   "label": "Tianna & Layton"
