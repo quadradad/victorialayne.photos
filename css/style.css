@@ -1,0 +1,349 @@
+/* Victoria Layne Photos — design system
+   Brand: warm, light, natural (see kb/Brand Direction.md)
+   Palette: cream base, charcoal text, terracotta + sage + prairie gold accents */
+
+:root {
+  --cream: #faf6ef;
+  --cream-deep: #f3ecdf;
+  --charcoal: #33302c;
+  --charcoal-soft: #5c564e;
+  --terracotta: #c06b3e;
+  --terracotta-deep: #a5552e;
+  --sage: #8b9a7d;
+  --gold: #d9a441;
+  --white: #fffdf9;
+
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Jost", "Avenir Next", "Segoe UI", sans-serif;
+
+  --maxw: 1120px;
+  --radius: 6px;
+  --shadow: 0 10px 30px rgba(51, 48, 44, 0.08);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  font-weight: 300;
+  color: var(--charcoal);
+  background: var(--cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--terracotta); text-decoration: none; }
+a:hover { color: var(--terracotta-deep); }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+.eyebrow {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--terracotta);
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- header ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(250, 246, 239, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(51, 48, 44, 0.07);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.wordmark {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  color: var(--charcoal);
+}
+
+.wordmark em { font-style: italic; color: var(--terracotta); }
+
+.site-nav { display: flex; align-items: center; gap: 28px; }
+
+.site-nav a {
+  color: var(--charcoal-soft);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.site-nav a:hover { color: var(--terracotta); }
+
+.btn {
+  display: inline-block;
+  background: var(--terracotta);
+  color: var(--white) !important;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: background 0.2s ease;
+}
+
+.btn:hover { background: var(--terracotta-deep); }
+
+.btn.ghost {
+  background: transparent;
+  color: var(--terracotta) !important;
+  border: 1px solid var(--terracotta);
+}
+
+.btn.ghost:hover { background: var(--terracotta); color: var(--white) !important; }
+
+.nav-toggle { display: none; background: none; border: 0; font-size: 1.5rem; color: var(--charcoal); cursor: pointer; }
+
+/* ---------- hero ---------- */
+
+.hero { padding: 48px 0 72px; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); margin-bottom: 1.25rem; }
+
+.hero h1 em { font-style: italic; color: var(--terracotta); }
+
+.hero p.lede { font-size: 1.1rem; color: var(--charcoal-soft); max-width: 34rem; margin-bottom: 2rem; }
+
+.hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+
+/* ---------- image placeholders (until real photos land) ---------- */
+
+.ph {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--cream-deep) 0%, #e8d9bf 45%, #d9b98a 100%);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: flex-end;
+}
+
+.ph::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 20%, rgba(217, 164, 65, 0.35), transparent 55%),
+    radial-gradient(ellipse at 20% 85%, rgba(139, 154, 125, 0.28), transparent 60%);
+}
+
+.ph span {
+  position: relative;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(51, 48, 44, 0.55);
+  padding: 12px 14px;
+}
+
+.ph.r45 { aspect-ratio: 4 / 5; }
+.ph.r32 { aspect-ratio: 3 / 2; }
+.ph.r11 { aspect-ratio: 1 / 1; }
+
+/* ---------- sections ---------- */
+
+section { padding: 72px 0; }
+
+.section-head { text-align: center; max-width: 44rem; margin: 0 auto 48px; }
+
+.section-head h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); }
+
+.section-head p { color: var(--charcoal-soft); margin-top: 0.75rem; }
+
+/* services */
+
+.services { background: var(--white); }
+
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+
+.card { background: var(--cream); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+
+.card .ph { border-radius: 0; box-shadow: none; }
+
+.card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+
+.card-body h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+
+.card-body p { font-size: 0.95rem; color: var(--charcoal-soft); flex: 1; }
+
+.card-body a { margin-top: 1rem; font-size: 0.83rem; text-transform: uppercase; letter-spacing: 0.12em; }
+
+.card-body .price-hint { font-size: 0.8rem; color: var(--sage); margin-top: 0.5rem; }
+
+/* experience steps */
+
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; counter-reset: step; }
+
+.step { text-align: center; padding: 0 12px; }
+
+.step::before {
+  counter-increment: step;
+  content: counter(step, decimal-leading-zero);
+  display: block;
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.step h3 { font-size: 1.25rem; margin-bottom: 0.4rem; }
+
+.step p { font-size: 0.92rem; color: var(--charcoal-soft); }
+
+/* about teaser */
+
+.about { background: var(--cream-deep); }
+
+.about-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 48px; align-items: center; }
+
+.about h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 1rem; }
+
+.about p { color: var(--charcoal-soft); margin-bottom: 1rem; }
+
+/* concerts strip */
+
+.concerts { background: var(--charcoal); color: var(--cream); }
+
+.concerts .section-head h2 { color: var(--cream); }
+
+.concerts .section-head p { color: rgba(250, 246, 239, 0.7); }
+
+.concerts .ph {
+  background: linear-gradient(135deg, #4a453f 0%, #33302c 60%);
+  box-shadow: none;
+}
+
+.concerts .ph::before {
+  background: radial-gradient(ellipse at 60% 30%, rgba(217, 164, 65, 0.25), transparent 55%);
+}
+
+.concerts .ph span { color: rgba(250, 246, 239, 0.5); }
+
+.concerts .band-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+.concerts .more { text-align: center; margin-top: 36px; }
+
+/* contact */
+
+.contact { background: var(--white); }
+
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+
+.contact-info h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 1rem; }
+
+.contact-info p { color: var(--charcoal-soft); margin-bottom: 1.25rem; }
+
+.contact-list { list-style: none; }
+
+.contact-list li { margin-bottom: 0.6rem; font-size: 1rem; }
+
+.contact-list .label {
+  display: inline-block;
+  width: 5.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--sage);
+}
+
+.consult-note {
+  margin-top: 1.5rem;
+  padding: 16px 18px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.9rem;
+  color: var(--charcoal-soft);
+}
+
+/* inquiry form (wire to Formspree/Netlify later) */
+
+.inquiry-form { display: grid; gap: 14px; }
+
+.inquiry-form label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--charcoal-soft); }
+
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(51, 48, 44, 0.18);
+  border-radius: var(--radius);
+  background: var(--cream);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--charcoal);
+}
+
+.inquiry-form textarea { min-height: 110px; resize: vertical; }
+
+.inquiry-form .btn { border: 0; cursor: pointer; justify-self: start; }
+
+.form-note { font-size: 0.8rem; color: var(--charcoal-soft); }
+
+/* footer */
+
+.site-footer {
+  background: var(--cream-deep);
+  padding: 40px 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--charcoal-soft);
+}
+
+.site-footer .social { margin-bottom: 0.75rem; }
+
+.site-footer .social a { margin: 0 10px; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.8rem; }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .card-grid, .steps { grid-template-columns: 1fr; }
+  .concerts .band-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--cream);
+    flex-direction: column;
+    padding: 24px;
+    gap: 18px;
+    border-bottom: 1px solid rgba(51, 48, 44, 0.08);
+  }
+
+  .site-nav.open { display: flex; }
+
+  .nav-toggle { display: block; }
+}
