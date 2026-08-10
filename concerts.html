@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — Victoria Layne Photos</title>
-  <meta name="description" content="Senior portraits, couples sessions, and concert photography by Victoria Layne — golden-hour work from Wise County and North Texas.">
+  <title>Concert Photography — Victoria Layne Photos</title>
+  <meta name="description" content="Live music photography by Victoria Layne — TobyMac, Latto, Gregory Alan Isakov, Soulja Boy, Wage War, and more. Available for shows, venues, and artist promo in DFW and North Texas.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -17,14 +17,14 @@
     <a class="wordmark" href="./">Victoria <em>Layne</em> Photos</a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     <nav class="site-nav">
-      <a href="./portfolio.html" aria-current="page">Portfolio</a>
+      <a href="./portfolio.html">Portfolio</a>
       <div class="nav-dropdown">
         <button class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">Sessions ▾</button>
         <div class="drop-menu">
           <a href="./seniors.html">Seniors</a>
           <a href="./couples.html">Couples &amp; Families</a>
           <a href="./weddings.html">Weddings</a>
-          <a href="./concerts.html">Concerts</a>
+          <a href="./concerts.html" aria-current="page">Concerts</a>
         </div>
       </div>
       <a href="./pricing.html">Pricing</a>
@@ -37,21 +37,25 @@
 <section class="portfolio-page">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Portfolio</p>
-      <h1>The work</h1>
-      <p>A cross-section of recent sessions. Tap any photo to view it full size.</p>
+      <p class="eyebrow">Concerts</p>
+      <h1>Trained in the pit</h1>
+      <p>Live music is where I learned to shoot — hard light, fast moments, no do-overs.
+         TobyMac, Latto, Gregory Alan Isakov, Soulja Boy, Wage War, and a lot of nights
+         in Deep Ellum. Available for shows, venues, and artist promo around North Texas.</p>
     </div>
 
-    <div class="filter-bar" id="filterBar">
-      <button class="filter-pill active" data-cat="all">All</button>
-      <!-- category pills injected from gallery-data.js -->
-    </div>
+    <div class="masonry" data-gallery-cat="concerts"></div>
 
-    <div class="masonry" id="gallery"></div>
+    <div class="cta-band">
+      <h2>Shooting a show?</h2>
+      <p style="color: var(--charcoal-soft); max-width: 32rem; margin: 0 auto 1.5rem;">
+        Coverage for sets, venues, and artist promo — tell me about the gig and I'll send rates.
+      </p>
+      <a class="btn" href="./contact.html">Let's talk</a>
+    </div>
   </div>
 </section>
 
-<!-- lightbox -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="lb-close" aria-label="Close">×</button>
   <button class="lb-prev" aria-label="Previous">‹</button>

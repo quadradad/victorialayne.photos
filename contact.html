@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Victoria Layne Photos</title>
+  <meta name="description" content="Book a senior, couples, family, or wedding photo session in Wise County, TX. Email victoria@victorialayne.photos or send a quick inquiry.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="./">Victoria <em>Layne</em> Photos</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="./portfolio.html">Portfolio</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">Sessions ▾</button>
+        <div class="drop-menu">
+          <a href="./seniors.html">Seniors</a>
+          <a href="./couples.html">Couples &amp; Families</a>
+          <a href="./weddings.html">Weddings</a>
+          <a href="./concerts.html">Concerts</a>
+        </div>
+      </div>
+      <a href="./pricing.html">Pricing</a>
+      <a href="./about.html">About</a>
+      <a class="btn" href="./contact.html" aria-current="page">Let's Talk</a>
+    </nav>
+  </div>
+</header>
+
+<section class="contact" style="padding-top: 48px;">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">Let's talk</p>
+      <h1 style="font-family: var(--serif); font-weight: 500; font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 1rem;">Tell me what you're dreaming up</h1>
+      <p>The fastest way to a date on the calendar is a quick note — where, when, and what you want to remember.</p>
+      <ul class="contact-list">
+        <li><span class="label">Email</span> <a href="mailto:victoria@victorialayne.photos">victoria@victorialayne.photos</a></li>
+        <li><span class="label">Phone</span> <a href="tel:+13604348079">360.434.8079</a></li>
+        <li><span class="label">Instagram</span> <a href="https://www.instagram.com/victorialayne.photos" rel="noopener">@victorialayne.photos</a></li>
+        <li><span class="label">Facebook</span> <a href="https://www.facebook.com/profile.php?id=61565796266887" rel="noopener">Victoria Layne Photos</a></li>
+      </ul>
+      <div class="consult-note">
+        <!-- Calendly slot: swap this block for an inline embed booking a free 30-min consult when ready -->
+        Want to talk it through first? A free 30-minute consult is coming soon — for now, email works great.
+      </div>
+    </div>
+    <form class="inquiry-form" action="#" method="POST">
+      <!-- TODO: wire to Formspree (form id) before launch -->
+      <div>
+        <label for="f-name">Name</label>
+        <input id="f-name" name="name" type="text" required>
+      </div>
+      <div>
+        <label for="f-email">Email</label>
+        <input id="f-email" name="email" type="email" required>
+      </div>
+      <div>
+        <label for="f-type">Session type</label>
+        <select id="f-type" name="session_type">
+          <option>Senior</option>
+          <option>Couples / Engagement</option>
+          <option>Family</option>
+          <option>Wedding / Elopement</option>
+          <option>Headshots</option>
+          <option>Event</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div>
+        <label for="f-date">Rough date (if you have one)</label>
+        <input id="f-date" name="date" type="text" placeholder="e.g., late October, or 'flexible'">
+      </div>
+      <div>
+        <label for="f-msg">What are you picturing?</label>
+        <textarea id="f-msg" name="message"></textarea>
+      </div>
+      <button class="btn" type="submit">Send it</button>
+      <p class="form-note">Form isn't wired up yet — email or DM works.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="social">
+      <a href="https://www.instagram.com/victorialayne.photos" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61565796266887" rel="noopener">Facebook</a>
+    </div>
+    <p>© 2026 Victoria Layne Photos · Wise County, Texas</p>
+  </div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

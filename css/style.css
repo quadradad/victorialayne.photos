@@ -115,6 +115,58 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
 
 .nav-toggle { display: none; background: none; border: 0; font-size: 1.5rem; color: var(--charcoal); cursor: pointer; }
 
+/* dropdown */
+
+.nav-dropdown { position: relative; }
+
+.nav-drop-btn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-weight: 300;
+  color: var(--charcoal-soft);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0;
+}
+
+.nav-drop-btn:hover { color: var(--terracotta); }
+
+.drop-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  background: var(--cream);
+  border: 1px solid rgba(51, 48, 44, 0.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  min-width: 190px;
+  padding: 8px 0;
+  z-index: 60;
+}
+
+.drop-menu::before { /* hover bridge */
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
+.nav-dropdown:hover .drop-menu,
+.nav-dropdown:focus-within .drop-menu,
+.nav-dropdown.open .drop-menu { display: flex; }
+
+.drop-menu a { padding: 9px 20px; }
+
+.drop-menu a[aria-current="page"] { color: var(--terracotta); }
+
 /* ---------- hero ---------- */
 
 .hero { padding: 48px 0 72px; }
@@ -460,6 +512,28 @@ section { padding: 72px 0; }
   letter-spacing: 0.08em;
 }
 
+/* cta band */
+
+.cta-band {
+  text-align: center;
+  background: var(--cream-deep);
+  border-radius: var(--radius);
+  padding: 48px 24px;
+  margin-top: 56px;
+}
+
+.cta-band h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1.25rem; }
+
+.gallery-empty {
+  text-align: center;
+  color: var(--charcoal-soft);
+  background: var(--cream-deep);
+  border-radius: var(--radius);
+  padding: 40px 24px;
+  margin: 0 auto 24px;
+  max-width: 36rem;
+}
+
 /* footer */
 
 .site-footer {
@@ -497,4 +571,20 @@ section { padding: 72px 0; }
   .site-nav.open { display: flex; }
 
   .nav-toggle { display: block; }
+
+  /* dropdown flattens into the mobile menu */
+  .nav-dropdown { position: static; }
+
+  .drop-menu {
+    display: flex;
+    position: static;
+    transform: none;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 6px 0 0 16px;
+    gap: 14px;
+  }
+
+  .nav-drop-btn { display: none; }
 }

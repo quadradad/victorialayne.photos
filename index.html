@@ -38,12 +38,18 @@
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     <nav class="site-nav">
       <a href="./portfolio.html">Portfolio</a>
-      <a href="#seniors">Seniors</a>
-      <a href="#couples">Couples</a>
-      <a href="#weddings">Weddings</a>
-      <a href="#about">About</a>
-      <a href="#investment">Investment</a>
-      <a class="btn" href="#contact">Let's Talk</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">Sessions ▾</button>
+        <div class="drop-menu">
+          <a href="./seniors.html">Seniors</a>
+          <a href="./couples.html">Couples &amp; Families</a>
+          <a href="./weddings.html">Weddings</a>
+          <a href="./concerts.html">Concerts</a>
+        </div>
+      </div>
+      <a href="./pricing.html">Pricing</a>
+      <a href="./about.html">About</a>
+      <a class="btn" href="./contact.html">Let's Talk</a>
     </nav>
   </div>
 </header>
@@ -60,7 +66,7 @@
         gallery fast, and it'll be generous.
       </p>
       <div class="hero-ctas">
-        <a class="btn" href="#contact">Plan your session</a>
+        <a class="btn" href="./contact.html">Plan your session</a>
         <a class="btn ghost" href="./portfolio.html">See the work</a>
       </div>
     </div>
@@ -83,7 +89,7 @@
           <h3>Seniors</h3>
           <p>This year only happens once. Golden-hour sessions built around what makes your senior them — boots, horses, letter jackets, all of it.</p>
           <p class="price-hint">from $150 · signature $250 · full experience $350</p>
-          <a href="#contact">Book a senior session →</a>
+          <a href="./seniors.html">Explore senior sessions →</a>
         </div>
       </div>
       <div class="card" id="couples">
@@ -92,7 +98,7 @@
           <h3>Couples &amp; Families</h3>
           <p>Engagements, anniversaries, family sessions — relaxed, candid, and actually fun. Come as you are; leave with photos you'll frame.</p>
           <p class="price-hint">minis $150 · signature $250</p>
-          <a href="#contact">Book a couples session →</a>
+          <a href="./couples.html">Explore couples &amp; families →</a>
         </div>
       </div>
       <div class="card" id="weddings">
@@ -101,7 +107,7 @@
           <h3>Weddings</h3>
           <p>From courthouse elopements to the full day — honest, warm coverage of the moments that matter, delivered as a gallery you'll revisit for years.</p>
           <p class="price-hint">elopements from $450 · full day $1,300</p>
-          <a href="#contact">Inquire about your date →</a>
+          <a href="./weddings.html">Explore weddings →</a>
         </div>
       </div>
     </div>
@@ -146,7 +152,7 @@
         out than posing.
       </p>
       <p><!-- TODO: Victoria's real bio + photo — see kb/Open Questions.md --></p>
-      <a class="btn ghost" href="#contact">Say hi</a>
+      <a class="btn ghost" href="./about.html">More about me →</a>
     </div>
   </div>
 </section>
@@ -165,159 +171,34 @@
       <div class="ph r11"><img src="./img/concert-3.jpg" alt="Gregory Alan Isakov live"></div>
       <div class="ph r11"><img src="./img/concert-4.jpg" alt="Wage War live"></div>
     </div>
-    <div class="more"><a class="btn ghost" style="border-color: var(--gold); color: var(--gold) !important;" href="./portfolio.html#concerts">Concert portfolio →</a></div>
+    <div class="more"><a class="btn ghost" style="border-color: var(--gold); color: var(--gold) !important;" href="./concerts.html">Concert portfolio →</a></div>
   </div>
 </section>
 
-<!-- ============ INVESTMENT ============ -->
-<section id="investment">
+<!-- ============ PRICING TEASER ============ -->
+<section id="pricing">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Investment</p>
+      <p class="eyebrow">Pricing</p>
       <h2>Simple packages, generous galleries</h2>
-      <p>Every session includes guided posing, an online gallery, and a personal print release.</p>
+      <p>Minis from $150 · signature sessions $250 · headshots $125 · weddings from $450.
+         Every session includes guided posing, an online gallery, and a personal print release.</p>
+      <p style="margin-top: 1.5rem;"><a class="btn ghost" href="./pricing.html">See all packages →</a></p>
     </div>
-
-    <div class="pricing-grid">
-      <div class="price-card">
-        <h3>Mini Session</h3>
-        <p class="price">$150</p>
-        <ul>
-          <li>30 minutes</li>
-          <li>1 location · 1 outfit</li>
-          <li>15+ edited images</li>
-        </ul>
-      </div>
-      <div class="price-card featured">
-        <h3>Signature Session</h3>
-        <p class="price">$250</p>
-        <ul>
-          <li>75–90 minutes</li>
-          <li>Up to 2 locations &amp; outfits</li>
-          <li>40+ edited images</li>
-          <li>Seniors · couples · families</li>
-        </ul>
-      </div>
-      <div class="price-card">
-        <h3>Senior Experience</h3>
-        <p class="price">$350</p>
-        <ul>
-          <li>2 hours · 2 locations</li>
-          <li>Unlimited outfits</li>
-          <li>60+ edited images</li>
-          <li>48-hour sneak peek</li>
-        </ul>
-      </div>
-      <div class="price-card">
-        <h3>Headshots</h3>
-        <p class="price">$125</p>
-        <ul>
-          <li>30 minutes · 2 outfits</li>
-          <li>5 retouched images</li>
-          <li>+$10 each additional</li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="pricing-subhead">Weddings &amp; events</p>
-
-    <div class="pricing-grid">
-      <div class="price-card">
-        <h3>Elopement</h3>
-        <p class="price">$450</p>
-        <ul>
-          <li>Up to 3 hours of coverage</li>
-          <li>100+ edited images</li>
-        </ul>
-      </div>
-      <div class="price-card featured">
-        <h3>Wedding Essentials</h3>
-        <p class="price">$900</p>
-        <ul>
-          <li>6 hours of coverage</li>
-          <li>300+ edited images</li>
-          <li>Timeline help included</li>
-        </ul>
-      </div>
-      <div class="price-card">
-        <h3>Full Wedding Day</h3>
-        <p class="price">$1,300</p>
-        <ul>
-          <li>9 hours of coverage</li>
-          <li>400+ edited images</li>
-          <li>Engagement mini included</li>
-          <li>Second shooter +$300</li>
-        </ul>
-      </div>
-      <div class="price-card">
-        <h3>Events</h3>
-        <p class="price">$125<small>/hr</small></p>
-        <ul>
-          <li>Parties · showers · corporate</li>
-          <li>2-hour minimum</li>
-          <li>Full edited gallery</li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="pricing-note">
-      A retainer books your date (25% for portraits, $200 for weddings). Travel's included within
-      25 miles of Wise County. Galleries arrive in 1–2 weeks (weddings 4–6). Weather reschedules are always free.
-    </p>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-info">
+<!-- ============ CONTACT CTA ============ -->
+<section class="contact" id="contact" style="padding-top: 24px;">
+  <div class="wrap">
+    <div class="cta-band" style="margin-top: 0;">
       <p class="eyebrow">Let's talk</p>
       <h2>Tell me what you're dreaming up</h2>
-      <p>The fastest way to a date on the calendar is a quick note — where, when, and what you want to remember.</p>
-      <ul class="contact-list">
-        <li><span class="label">Email</span> <a href="mailto:victoria@victorialayne.photos">victoria@victorialayne.photos</a></li>
-        <li><span class="label">Phone</span> <a href="tel:+13604348079">360.434.8079</a></li>
-        <li><span class="label">Instagram</span> <a href="https://www.instagram.com/victorialayne.photos" rel="noopener">@victorialayne.photos</a></li>
-        <li><span class="label">Facebook</span> <a href="https://www.facebook.com/profile.php?id=61565796266887" rel="noopener">Victoria Layne Photos</a></li>
-      </ul>
-      <div class="consult-note">
-        <!-- Calendly slot: swap this block for an inline embed booking a free 30-min consult when ready -->
-        Want to talk it through first? A free 30-minute consult is coming soon — for now, email works great.
-      </div>
+      <p style="color: var(--charcoal-soft); max-width: 34rem; margin: 0 auto 1.5rem;">
+        A quick note — where, when, and what you want to remember — is all it takes to get a date on the calendar.
+      </p>
+      <a class="btn" href="./contact.html">Start the conversation</a>
     </div>
-    <form class="inquiry-form" action="#" method="POST">
-      <!-- TODO: wire to Formspree (form id) before launch -->
-      <div>
-        <label for="f-name">Name</label>
-        <input id="f-name" name="name" type="text" required>
-      </div>
-      <div>
-        <label for="f-email">Email</label>
-        <input id="f-email" name="email" type="email" required>
-      </div>
-      <div>
-        <label for="f-type">Session type</label>
-        <select id="f-type" name="session_type">
-          <option>Senior</option>
-          <option>Couples / Engagement</option>
-          <option>Family</option>
-          <option>Wedding / Elopement</option>
-          <option>Headshots</option>
-          <option>Event</option>
-          <option>Something else</option>
-        </select>
-      </div>
-      <div>
-        <label for="f-date">Rough date (if you have one)</label>
-        <input id="f-date" name="date" type="text" placeholder="e.g., late October, or 'flexible'">
-      </div>
-      <div>
-        <label for="f-msg">What are you picturing?</label>
-        <textarea id="f-msg" name="message"></textarea>
-      </div>
-      <button class="btn" type="submit">Send it</button>
-      <p class="form-note">Form isn't wired up yet in this preview — email or DM works.</p>
-    </form>
   </div>
 </section>
 
