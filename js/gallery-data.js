@@ -7,11 +7,6 @@ const GALLERY = [
   "label": "Lindie"
  },
  {
-  "src": "img/portfolio/seniors/02-lindie.jpg",
-  "cat": "seniors",
-  "label": "Lindie"
- },
- {
   "src": "img/portfolio/seniors/03-lindie.jpg",
   "cat": "seniors",
   "label": "Lindie"
