@@ -3,20 +3,28 @@ const GALLERY_CATEGORIES = ["portraits", "couples", "weddings-events", "families
 const GALLERY_LABELS = {"portraits": "Portraits", "couples": "Couples", "weddings-events": "Weddings & Events", "families": "Families", "concerts": "Concerts"};
 const GALLERY = [
  {
-  "src": "img/portfolio/portraits/01-lindie.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/01-lindie.jpg",
-  "w": 985,
-  "h": 1280,
+  "src": "img/portfolio/portraits/01-willow-creek.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/01-willow-creek.jpg",
+  "w": 1397,
+  "h": 1862,
   "cat": "portraits",
-  "label": "Lindie"
+  "label": "Willow Creek"
  },
  {
-  "src": "img/portfolio/portraits/03-lindie.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/03-lindie.jpg",
-  "w": 683,
-  "h": 1024,
+  "src": "img/portfolio/portraits/02-lakeside-senior.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/02-lakeside-senior.jpg",
+  "w": 1365,
+  "h": 1820,
   "cat": "portraits",
-  "label": "Lindie"
+  "label": "Lakeside Senior"
+ },
+ {
+  "src": "img/portfolio/portraits/03-city-fountain.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/03-city-fountain.jpg",
+  "w": 1365,
+  "h": 1706,
+  "cat": "portraits",
+  "label": "City Fountain"
  },
  {
   "src": "img/portfolio/portraits/04-maddy.jpg",
@@ -27,594 +35,394 @@ const GALLERY = [
   "label": "Maddy"
  },
  {
-  "src": "img/portfolio/portraits/05-maddy.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/05-maddy.jpg",
-  "w": 933,
-  "h": 1400,
-  "cat": "portraits",
-  "label": "Maddy"
- },
- {
-  "src": "img/portfolio/portraits/06-desi.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/06-desi.jpg",
-  "w": 1055,
-  "h": 1400,
-  "cat": "portraits",
-  "label": "Desi"
- },
- {
-  "src": "img/portfolio/portraits/07-desi.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/07-desi.jpg",
-  "w": 861,
-  "h": 1280,
-  "cat": "portraits",
-  "label": "Desi"
- },
- {
-  "src": "img/portfolio/portraits/08-sage.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/08-sage.jpg",
-  "w": 858,
-  "h": 1280,
-  "cat": "portraits",
-  "label": "Sage"
- },
- {
-  "src": "img/portfolio/portraits/09-trinity.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/09-trinity.jpg",
-  "w": 958,
-  "h": 1280,
-  "cat": "portraits",
-  "label": "Trinity"
- },
- {
-  "src": "img/portfolio/portraits/10-alyssa.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/10-alyssa.jpg",
-  "w": 958,
-  "h": 1280,
-  "cat": "portraits",
-  "label": "Alyssa"
- },
- {
-  "src": "img/portfolio/portraits/11-alyssa.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/11-alyssa.jpg",
-  "w": 854,
-  "h": 1280,
-  "cat": "portraits",
-  "label": "Alyssa"
- },
- {
-  "src": "img/portfolio/portraits/12-golden-field.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/12-golden-field.jpg",
-  "w": 1400,
-  "h": 1750,
-  "cat": "portraits",
-  "label": "Golden Field"
- },
- {
-  "src": "img/portfolio/portraits/13-golden-field.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/13-golden-field.jpg",
-  "w": 1400,
-  "h": 1749,
-  "cat": "portraits",
-  "label": "Golden Field"
- },
- {
-  "src": "img/portfolio/portraits/14-windswept.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/14-windswept.jpg",
-  "w": 1179,
-  "h": 1473,
-  "cat": "portraits",
-  "label": "Windswept"
- },
- {
-  "src": "img/portfolio/portraits/15-with-her-horse.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/15-with-her-horse.jpg",
-  "w": 853,
-  "h": 1066,
-  "cat": "portraits",
-  "label": "With Her Horse"
- },
- {
-  "src": "img/portfolio/portraits/16-meadow.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/16-meadow.jpg",
-  "w": 1353,
-  "h": 1691,
-  "cat": "portraits",
-  "label": "Meadow"
- },
- {
-  "src": "img/portfolio/portraits/17-desirae.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/17-desirae.jpg",
-  "w": 1307,
-  "h": 1633,
-  "cat": "portraits",
-  "label": "Desirae"
- },
- {
-  "src": "img/portfolio/portraits/18-desirae.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/18-desirae.jpg",
+  "src": "img/portfolio/portraits/05-desirae.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/05-desirae.jpg",
   "w": 1365,
   "h": 1706,
   "cat": "portraits",
   "label": "Desirae"
  },
  {
-  "src": "img/portfolio/portraits/19-desirae.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/19-desirae.jpg",
+  "src": "img/portfolio/portraits/06-mountain-lake.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/06-mountain-lake.jpg",
+  "w": 1365,
+  "h": 1819,
+  "cat": "portraits",
+  "label": "Mountain Lake"
+ },
+ {
+  "src": "img/portfolio/portraits/07-city-fountain.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/07-city-fountain.jpg",
   "w": 1365,
   "h": 1706,
   "cat": "portraits",
-  "label": "Desirae"
+  "label": "City Fountain"
  },
  {
-  "src": "img/portfolio/portraits/20-desirae.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/20-desirae.jpg",
-  "w": 1365,
-  "h": 1706,
-  "cat": "portraits",
-  "label": "Desirae"
- },
- {
-  "src": "img/portfolio/portraits/21-desirae.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/21-desirae.jpg",
-  "w": 1365,
-  "h": 1706,
-  "cat": "portraits",
-  "label": "Desirae"
- },
- {
-  "src": "img/portfolio/portraits/22-desirae.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/22-desirae.jpg",
+  "src": "img/portfolio/portraits/08-desirae.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/08-desirae.jpg",
   "w": 1341,
   "h": 1676,
   "cat": "portraits",
   "label": "Desirae"
  },
  {
-  "src": "img/portfolio/portraits/23-desirae.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/23-desirae.jpg",
-  "w": 1365,
-  "h": 1706,
-  "cat": "portraits",
-  "label": "Desirae"
- },
- {
-  "src": "img/portfolio/portraits/24-city-fountain.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/24-city-fountain.jpg",
-  "w": 1342,
-  "h": 1677,
-  "cat": "portraits",
-  "label": "City Fountain"
- },
- {
-  "src": "img/portfolio/portraits/25-city-fountain.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/25-city-fountain.jpg",
-  "w": 1365,
-  "h": 1706,
-  "cat": "portraits",
-  "label": "City Fountain"
- },
- {
-  "src": "img/portfolio/portraits/26-city-fountain.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/26-city-fountain.jpg",
-  "w": 1365,
-  "h": 1706,
-  "cat": "portraits",
-  "label": "City Fountain"
- },
- {
-  "src": "img/portfolio/portraits/27-lakeside-senior.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/27-lakeside-senior.jpg",
-  "w": 1365,
-  "h": 1819,
-  "cat": "portraits",
-  "label": "Lakeside Senior"
- },
- {
-  "src": "img/portfolio/portraits/28-lakeside-senior.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/28-lakeside-senior.jpg",
-  "w": 1357,
-  "h": 1809,
-  "cat": "portraits",
-  "label": "Lakeside Senior"
- },
- {
-  "src": "img/portfolio/portraits/29-lakeside-senior.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/29-lakeside-senior.jpg",
-  "w": 1347,
-  "h": 1796,
-  "cat": "portraits",
-  "label": "Lakeside Senior"
- },
- {
-  "src": "img/portfolio/portraits/30-lakeside-senior.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/30-lakeside-senior.jpg",
-  "w": 1365,
-  "h": 1820,
-  "cat": "portraits",
-  "label": "Lakeside Senior"
- },
- {
-  "src": "img/portfolio/portraits/31-lakeside-senior.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/31-lakeside-senior.jpg",
+  "src": "img/portfolio/portraits/09-lakeside-senior.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/09-lakeside-senior.jpg",
   "w": 1350,
   "h": 1800,
   "cat": "portraits",
   "label": "Lakeside Senior"
  },
  {
-  "src": "img/portfolio/portraits/32-mountain-lake.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/32-mountain-lake.jpg",
-  "w": 1365,
-  "h": 1820,
+  "src": "img/portfolio/portraits/10-meadow.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/10-meadow.jpg",
+  "w": 1353,
+  "h": 1691,
   "cat": "portraits",
-  "label": "Mountain Lake"
+  "label": "Meadow"
  },
  {
-  "src": "img/portfolio/portraits/33-mountain-lake.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/33-mountain-lake.jpg",
-  "w": 1365,
-  "h": 1819,
-  "cat": "portraits",
-  "label": "Mountain Lake"
- },
- {
-  "src": "img/portfolio/portraits/34-mountain-lake.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/34-mountain-lake.jpg",
-  "w": 1365,
-  "h": 1820,
-  "cat": "portraits",
-  "label": "Mountain Lake"
- },
- {
-  "src": "img/portfolio/portraits/35-willow-creek.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/35-willow-creek.jpg",
+  "src": "img/portfolio/portraits/11-willow-creek.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/11-willow-creek.jpg",
   "w": 1365,
   "h": 1819,
   "cat": "portraits",
   "label": "Willow Creek"
  },
  {
-  "src": "img/portfolio/portraits/36-willow-creek.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/36-willow-creek.jpg",
-  "w": 1365,
-  "h": 1819,
+  "src": "img/portfolio/portraits/12-desirae.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/12-desirae.jpg",
+  "w": 1307,
+  "h": 1633,
   "cat": "portraits",
-  "label": "Willow Creek"
+  "label": "Desirae"
  },
  {
-  "src": "img/portfolio/portraits/37-willow-creek.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/37-willow-creek.jpg",
-  "w": 1358,
-  "h": 1810,
+  "src": "img/portfolio/portraits/13-city-fountain.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/13-city-fountain.jpg",
+  "w": 1342,
+  "h": 1677,
   "cat": "portraits",
-  "label": "Willow Creek"
+  "label": "City Fountain"
  },
  {
-  "src": "img/portfolio/portraits/38-willow-creek.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/38-willow-creek.jpg",
-  "w": 1365,
-  "h": 1819,
+  "src": "img/portfolio/portraits/14-maddy.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/14-maddy.jpg",
+  "w": 1280,
+  "h": 1920,
   "cat": "portraits",
-  "label": "Willow Creek"
+  "label": "Maddy"
  },
  {
-  "src": "img/portfolio/portraits/39-willow-creek.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/39-willow-creek.jpg",
-  "w": 1397,
-  "h": 1862,
+  "src": "img/portfolio/portraits/15-lakeside-senior.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/15-lakeside-senior.jpg",
+  "w": 1347,
+  "h": 1796,
   "cat": "portraits",
-  "label": "Willow Creek"
+  "label": "Lakeside Senior"
  },
  {
-  "src": "img/portfolio/portraits/40-willow-creek.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/40-willow-creek.jpg",
+  "src": "img/portfolio/portraits/16-willow-creek.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/16-willow-creek.jpg",
   "w": 1228,
   "h": 1637,
   "cat": "portraits",
   "label": "Willow Creek"
  },
  {
-  "src": "img/portfolio/portraits/41-willow-creek.jpg",
-  "thumb": "img/portfolio/_thumbs/portraits/41-willow-creek.jpg",
+  "src": "img/portfolio/portraits/17-desirae.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/17-desirae.jpg",
+  "w": 1365,
+  "h": 1706,
+  "cat": "portraits",
+  "label": "Desirae"
+ },
+ {
+  "src": "img/portfolio/portraits/18-mountain-lake.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/18-mountain-lake.jpg",
+  "w": 1365,
+  "h": 1820,
+  "cat": "portraits",
+  "label": "Mountain Lake"
+ },
+ {
+  "src": "img/portfolio/portraits/19-desi.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/19-desi.jpg",
+  "w": 1055,
+  "h": 1400,
+  "cat": "portraits",
+  "label": "Desi"
+ },
+ {
+  "src": "img/portfolio/portraits/20-lakeside-senior.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/20-lakeside-senior.jpg",
+  "w": 1365,
+  "h": 1819,
+  "cat": "portraits",
+  "label": "Lakeside Senior"
+ },
+ {
+  "src": "img/portfolio/portraits/21-willow-creek.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/21-willow-creek.jpg",
+  "w": 1358,
+  "h": 1810,
+  "cat": "portraits",
+  "label": "Willow Creek"
+ },
+ {
+  "src": "img/portfolio/portraits/22-desirae.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/22-desirae.jpg",
+  "w": 1365,
+  "h": 1706,
+  "cat": "portraits",
+  "label": "Desirae"
+ },
+ {
+  "src": "img/portfolio/portraits/23-lakeside-senior.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/23-lakeside-senior.jpg",
+  "w": 1357,
+  "h": 1809,
+  "cat": "portraits",
+  "label": "Lakeside Senior"
+ },
+ {
+  "src": "img/portfolio/portraits/24-willow-creek.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/24-willow-creek.jpg",
   "w": 1365,
   "h": 1819,
   "cat": "portraits",
   "label": "Willow Creek"
  },
  {
-  "src": "img/portfolio/couples/01-tianna--layton.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/01-tianna--layton.jpg",
-  "w": 959,
-  "h": 1400,
-  "cat": "couples",
-  "label": "Tianna & Layton"
- },
- {
-  "src": "img/portfolio/couples/02-tianna--layton.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/02-tianna--layton.jpg",
-  "w": 933,
-  "h": 1400,
-  "cat": "couples",
-  "label": "Tianna & Layton"
- },
- {
-  "src": "img/portfolio/couples/03-tianna--layton.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/03-tianna--layton.jpg",
-  "w": 933,
-  "h": 1400,
-  "cat": "couples",
-  "label": "Tianna & Layton"
- },
- {
-  "src": "img/portfolio/couples/04-eden--will.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/04-eden--will.jpg",
-  "w": 847,
-  "h": 1280,
-  "cat": "couples",
-  "label": "Eden & Will"
- },
- {
-  "src": "img/portfolio/couples/05-eden--will.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/05-eden--will.jpg",
-  "w": 853,
-  "h": 1280,
-  "cat": "couples",
-  "label": "Eden & Will"
- },
- {
-  "src": "img/portfolio/couples/06-jenicolton.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/06-jenicolton.jpg",
-  "w": 853,
-  "h": 1280,
-  "cat": "couples",
-  "label": "Jenicolton"
- },
- {
-  "src": "img/portfolio/couples/07-jenicolton.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/07-jenicolton.jpg",
-  "w": 853,
-  "h": 1280,
-  "cat": "couples",
-  "label": "Jenicolton"
- },
- {
-  "src": "img/portfolio/couples/08-desicaiden.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/08-desicaiden.jpg",
-  "w": 910,
-  "h": 1280,
-  "cat": "couples",
-  "label": "Desicaiden"
- },
- {
-  "src": "img/portfolio/couples/09-desicaiden.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/09-desicaiden.jpg",
-  "w": 853,
-  "h": 1280,
-  "cat": "couples",
-  "label": "Desicaiden"
- },
- {
-  "src": "img/portfolio/couples/10-landrie--vaden.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/10-landrie--vaden.jpg",
+  "src": "img/portfolio/portraits/25-mountain-lake.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/25-mountain-lake.jpg",
   "w": 1365,
   "h": 1820,
-  "cat": "couples",
-  "label": "Landrie & Vaden"
+  "cat": "portraits",
+  "label": "Mountain Lake"
  },
  {
-  "src": "img/portfolio/couples/11-landrie--vaden.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/11-landrie--vaden.jpg",
+  "src": "img/portfolio/portraits/26-willow-creek.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/26-willow-creek.jpg",
   "w": 1365,
-  "h": 1820,
-  "cat": "couples",
-  "label": "Landrie & Vaden"
+  "h": 1819,
+  "cat": "portraits",
+  "label": "Willow Creek"
  },
  {
-  "src": "img/portfolio/couples/12-landrie--vaden.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/12-landrie--vaden.jpg",
-  "w": 1280,
+  "src": "img/portfolio/portraits/27-desirae.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/27-desirae.jpg",
+  "w": 1365,
   "h": 1706,
-  "cat": "couples",
-  "label": "Landrie & Vaden"
+  "cat": "portraits",
+  "label": "Desirae"
  },
  {
-  "src": "img/portfolio/couples/13-landrie--vaden.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/13-landrie--vaden.jpg",
-  "w": 1400,
-  "h": 1866,
-  "cat": "couples",
-  "label": "Landrie & Vaden"
- },
- {
-  "src": "img/portfolio/couples/14-landrie--vaden.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/14-landrie--vaden.jpg",
-  "w": 1320,
-  "h": 1760,
-  "cat": "couples",
-  "label": "Landrie & Vaden"
- },
- {
-  "src": "img/portfolio/couples/15-autumn-engagement.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/15-autumn-engagement.jpg",
-  "w": 1400,
-  "h": 1867,
-  "cat": "couples",
-  "label": "Autumn Engagement"
- },
- {
-  "src": "img/portfolio/couples/16-autumn-engagement.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/16-autumn-engagement.jpg",
-  "w": 1310,
-  "h": 1746,
-  "cat": "couples",
-  "label": "Autumn Engagement"
- },
- {
-  "src": "img/portfolio/couples/17-autumn-engagement.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/17-autumn-engagement.jpg",
-  "w": 1400,
-  "h": 1867,
-  "cat": "couples",
-  "label": "Autumn Engagement"
- },
- {
-  "src": "img/portfolio/couples/18-autumn-engagement.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/18-autumn-engagement.jpg",
+  "src": "img/portfolio/portraits/28-willow-creek.jpg",
+  "thumb": "img/portfolio/_thumbs/portraits/28-willow-creek.jpg",
   "w": 1365,
-  "h": 1820,
-  "cat": "couples",
-  "label": "Autumn Engagement"
+  "h": 1819,
+  "cat": "portraits",
+  "label": "Willow Creek"
  },
  {
-  "src": "img/portfolio/couples/19-autumn-engagement.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/19-autumn-engagement.jpg",
-  "w": 1373,
-  "h": 1830,
-  "cat": "couples",
-  "label": "Autumn Engagement"
- },
- {
-  "src": "img/portfolio/couples/20-autumn-engagement.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/20-autumn-engagement.jpg",
+  "src": "img/portfolio/couples/01-autumn-engagement.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/01-autumn-engagement.jpg",
   "w": 1400,
-  "h": 1863,
+  "h": 1867,
   "cat": "couples",
   "label": "Autumn Engagement"
  },
  {
-  "src": "img/portfolio/couples/21-summer-sunset.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/21-summer-sunset.jpg",
+  "src": "img/portfolio/couples/02-summer-sunset.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/02-summer-sunset.jpg",
   "w": 1381,
   "h": 1841,
   "cat": "couples",
   "label": "Summer Sunset"
  },
  {
-  "src": "img/portfolio/couples/22-summer-sunset.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/22-summer-sunset.jpg",
+  "src": "img/portfolio/couples/03-tianna--layton.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/03-tianna--layton.jpg",
+  "w": 1280,
+  "h": 1920,
+  "cat": "couples",
+  "label": "Tianna & Layton"
+ },
+ {
+  "src": "img/portfolio/couples/04-landrie--vaden.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/04-landrie--vaden.jpg",
+  "w": 1320,
+  "h": 1760,
+  "cat": "couples",
+  "label": "Landrie & Vaden"
+ },
+ {
+  "src": "img/portfolio/couples/05-autumn-engagement.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/05-autumn-engagement.jpg",
+  "w": 1365,
+  "h": 1820,
+  "cat": "couples",
+  "label": "Autumn Engagement"
+ },
+ {
+  "src": "img/portfolio/couples/06-summer-sunset.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/06-summer-sunset.jpg",
   "w": 1385,
   "h": 1846,
   "cat": "couples",
   "label": "Summer Sunset"
  },
  {
-  "src": "img/portfolio/couples/23-summer-sunset.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/23-summer-sunset.jpg",
+  "src": "img/portfolio/couples/07-autumn-engagement.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/07-autumn-engagement.jpg",
+  "w": 1310,
+  "h": 1746,
+  "cat": "couples",
+  "label": "Autumn Engagement"
+ },
+ {
+  "src": "img/portfolio/couples/08-landrie--vaden.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/08-landrie--vaden.jpg",
+  "w": 1365,
+  "h": 1820,
+  "cat": "couples",
+  "label": "Landrie & Vaden"
+ },
+ {
+  "src": "img/portfolio/couples/09-autumn-engagement.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/09-autumn-engagement.jpg",
+  "w": 1400,
+  "h": 1867,
+  "cat": "couples",
+  "label": "Autumn Engagement"
+ },
+ {
+  "src": "img/portfolio/couples/10-summer-sunset.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/10-summer-sunset.jpg",
   "w": 1365,
   "h": 1820,
   "cat": "couples",
   "label": "Summer Sunset"
  },
  {
-  "src": "img/portfolio/couples/24-summer-sunset.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/24-summer-sunset.jpg",
+  "src": "img/portfolio/couples/11-autumn-engagement.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/11-autumn-engagement.jpg",
+  "w": 1373,
+  "h": 1830,
+  "cat": "couples",
+  "label": "Autumn Engagement"
+ },
+ {
+  "src": "img/portfolio/couples/12-summer-sunset.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/12-summer-sunset.jpg",
+  "w": 1400,
+  "h": 1866,
+  "cat": "couples",
+  "label": "Summer Sunset"
+ },
+ {
+  "src": "img/portfolio/couples/13-summer-sunset.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/13-summer-sunset.jpg",
   "w": 1365,
   "h": 1820,
   "cat": "couples",
   "label": "Summer Sunset"
  },
  {
-  "src": "img/portfolio/couples/25-summer-sunset.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/25-summer-sunset.jpg",
+  "src": "img/portfolio/couples/14-summer-sunset.jpg",
+  "thumb": "img/portfolio/_thumbs/couples/14-summer-sunset.jpg",
   "w": 1365,
   "h": 1820,
   "cat": "couples",
   "label": "Summer Sunset"
  },
  {
-  "src": "img/portfolio/couples/26-pumpkin-patch.jpg",
-  "thumb": "img/portfolio/_thumbs/couples/26-pumpkin-patch.jpg",
-  "w": 853,
-  "h": 952,
-  "cat": "couples",
-  "label": "Pumpkin Patch"
- },
- {
-  "src": "img/portfolio/weddings-events/01-the-pauls.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/01-the-pauls.jpg",
-  "w": 1354,
-  "h": 1805,
-  "cat": "weddings-events",
-  "label": "The Pauls"
- },
- {
-  "src": "img/portfolio/weddings-events/02-the-pauls.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/02-the-pauls.jpg",
-  "w": 1382,
-  "h": 1839,
-  "cat": "weddings-events",
-  "label": "The Pauls"
- },
- {
-  "src": "img/portfolio/weddings-events/03-the-pauls.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/03-the-pauls.jpg",
-  "w": 1241,
-  "h": 1654,
-  "cat": "weddings-events",
-  "label": "The Pauls"
- },
- {
-  "src": "img/portfolio/weddings-events/04-the-pauls.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/04-the-pauls.jpg",
-  "w": 1365,
-  "h": 1820,
-  "cat": "weddings-events",
-  "label": "The Pauls"
- },
- {
-  "src": "img/portfolio/weddings-events/05-the-pauls.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/05-the-pauls.jpg",
-  "w": 1367,
-  "h": 1822,
-  "cat": "weddings-events",
-  "label": "The Pauls"
- },
- {
-  "src": "img/portfolio/weddings-events/06-the-pauls.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/06-the-pauls.jpg",
-  "w": 1365,
-  "h": 1820,
-  "cat": "weddings-events",
-  "label": "The Pauls"
- },
- {
-  "src": "img/portfolio/weddings-events/07-the-pauls.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/07-the-pauls.jpg",
-  "w": 1365,
-  "h": 1820,
-  "cat": "weddings-events",
-  "label": "The Pauls"
- },
- {
-  "src": "img/portfolio/weddings-events/08-the-pauls.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/08-the-pauls.jpg",
-  "w": 1365,
-  "h": 1820,
-  "cat": "weddings-events",
-  "label": "The Pauls"
- },
- {
-  "src": "img/portfolio/weddings-events/09-courthouse-elopement.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/09-courthouse-elopement.jpg",
-  "w": 981,
-  "h": 1308,
-  "cat": "weddings-events",
-  "label": "Courthouse Elopement"
- },
- {
-  "src": "img/portfolio/weddings-events/10-courthouse-elopement.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/10-courthouse-elopement.jpg",
+  "src": "img/portfolio/weddings-events/01-courthouse-elopement.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/01-courthouse-elopement.jpg",
   "w": 973,
   "h": 1297,
   "cat": "weddings-events",
   "label": "Courthouse Elopement"
  },
  {
-  "src": "img/portfolio/weddings-events/11-courthouse-elopement.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/11-courthouse-elopement.jpg",
+  "src": "img/portfolio/weddings-events/02-the-pauls.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/02-the-pauls.jpg",
+  "w": 1365,
+  "h": 1820,
+  "cat": "weddings-events",
+  "label": "The Pauls"
+ },
+ {
+  "src": "img/portfolio/weddings-events/03-courthouse-elopement.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/03-courthouse-elopement.jpg",
   "w": 978,
   "h": 1304,
+  "cat": "weddings-events",
+  "label": "Courthouse Elopement"
+ },
+ {
+  "src": "img/portfolio/weddings-events/04-the-pauls.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/04-the-pauls.jpg",
+  "w": 1382,
+  "h": 1839,
+  "cat": "weddings-events",
+  "label": "The Pauls"
+ },
+ {
+  "src": "img/portfolio/weddings-events/05-the-pauls.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/05-the-pauls.jpg",
+  "w": 1241,
+  "h": 1654,
+  "cat": "weddings-events",
+  "label": "The Pauls"
+ },
+ {
+  "src": "img/portfolio/weddings-events/06-courthouse-elopement.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/06-courthouse-elopement.jpg",
+  "w": 981,
+  "h": 1308,
+  "cat": "weddings-events",
+  "label": "Courthouse Elopement"
+ },
+ {
+  "src": "img/portfolio/weddings-events/07-courthouse-elopement.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/07-courthouse-elopement.jpg",
+  "w": 968,
+  "h": 1290,
+  "cat": "weddings-events",
+  "label": "Courthouse Elopement"
+ },
+ {
+  "src": "img/portfolio/weddings-events/08-the-pauls.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/08-the-pauls.jpg",
+  "w": 1354,
+  "h": 1805,
+  "cat": "weddings-events",
+  "label": "The Pauls"
+ },
+ {
+  "src": "img/portfolio/weddings-events/09-the-pauls.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/09-the-pauls.jpg",
+  "w": 1365,
+  "h": 1820,
+  "cat": "weddings-events",
+  "label": "The Pauls"
+ },
+ {
+  "src": "img/portfolio/weddings-events/10-courthouse-elopement.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/10-courthouse-elopement.jpg",
+  "w": 974,
+  "h": 1298,
+  "cat": "weddings-events",
+  "label": "Courthouse Elopement"
+ },
+ {
+  "src": "img/portfolio/weddings-events/11-courthouse-elopement.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/11-courthouse-elopement.jpg",
+  "w": 923,
+  "h": 1230,
   "cat": "weddings-events",
   "label": "Courthouse Elopement"
  },
@@ -627,36 +435,36 @@ const GALLERY = [
   "label": "Courthouse Elopement"
  },
  {
-  "src": "img/portfolio/weddings-events/13-courthouse-elopement.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/13-courthouse-elopement.jpg",
+  "src": "img/portfolio/weddings-events/13-the-pauls.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/13-the-pauls.jpg",
+  "w": 1365,
+  "h": 1820,
+  "cat": "weddings-events",
+  "label": "The Pauls"
+ },
+ {
+  "src": "img/portfolio/weddings-events/14-the-pauls.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/14-the-pauls.jpg",
+  "w": 1367,
+  "h": 1822,
+  "cat": "weddings-events",
+  "label": "The Pauls"
+ },
+ {
+  "src": "img/portfolio/weddings-events/15-courthouse-elopement.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/15-courthouse-elopement.jpg",
   "w": 973,
   "h": 1297,
   "cat": "weddings-events",
   "label": "Courthouse Elopement"
  },
  {
-  "src": "img/portfolio/weddings-events/14-courthouse-elopement.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/14-courthouse-elopement.jpg",
-  "w": 923,
-  "h": 1230,
+  "src": "img/portfolio/weddings-events/16-the-pauls.jpg",
+  "thumb": "img/portfolio/_thumbs/weddings-events/16-the-pauls.jpg",
+  "w": 1365,
+  "h": 1820,
   "cat": "weddings-events",
-  "label": "Courthouse Elopement"
- },
- {
-  "src": "img/portfolio/weddings-events/15-courthouse-elopement.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/15-courthouse-elopement.jpg",
-  "w": 968,
-  "h": 1290,
-  "cat": "weddings-events",
-  "label": "Courthouse Elopement"
- },
- {
-  "src": "img/portfolio/weddings-events/16-courthouse-elopement.jpg",
-  "thumb": "img/portfolio/_thumbs/weddings-events/16-courthouse-elopement.jpg",
-  "w": 974,
-  "h": 1298,
-  "cat": "weddings-events",
-  "label": "Courthouse Elopement"
+  "label": "The Pauls"
  },
  {
   "src": "img/portfolio/families/01-family-session.jpg",
