@@ -707,64 +707,192 @@ const GALLERY = [
   "label": "Family Session"
  },
  {
-  "src": "img/portfolio/concerts/01-tobymac.jpg",
-  "thumb": "img/portfolio/_thumbs/concerts/01-tobymac.jpg",
-  "w": 933,
-  "h": 1400,
-  "cat": "concerts",
-  "label": "Tobymac"
- },
- {
-  "src": "img/portfolio/concerts/02-latto.jpg",
-  "thumb": "img/portfolio/_thumbs/concerts/02-latto.jpg",
-  "w": 849,
-  "h": 1400,
+  "src": "img/portfolio/concerts/01-latto.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/01-latto.jpg",
+  "w": 1208,
+  "h": 1920,
   "cat": "concerts",
   "label": "Latto"
  },
  {
-  "src": "img/portfolio/concerts/03-gregory-alan-isakov.jpg",
-  "thumb": "img/portfolio/_thumbs/concerts/03-gregory-alan-isakov.jpg",
-  "w": 933,
-  "h": 1400,
-  "cat": "concerts",
-  "label": "Gregory Alan Isakov"
- },
- {
-  "src": "img/portfolio/concerts/04-wage-war.jpg",
-  "thumb": "img/portfolio/_thumbs/concerts/04-wage-war.jpg",
-  "w": 683,
-  "h": 1024,
-  "cat": "concerts",
-  "label": "Wage War"
- },
- {
-  "src": "img/portfolio/concerts/05-leprous.jpg",
-  "thumb": "img/portfolio/_thumbs/concerts/05-leprous.jpg",
-  "w": 853,
+  "src": "img/portfolio/concerts/02-earthside.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/02-earthside.jpg",
+  "w": 888,
   "h": 1280,
   "cat": "concerts",
-  "label": "Leprous"
+  "label": "Earthside"
  },
  {
-  "src": "img/portfolio/concerts/06-souljaboy.jpg",
-  "thumb": "img/portfolio/_thumbs/concerts/06-souljaboy.jpg",
+  "src": "img/portfolio/concerts/03-souljaboy.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/03-souljaboy.jpg",
   "w": 853,
   "h": 1280,
   "cat": "concerts",
   "label": "Souljaboy"
  },
  {
-  "src": "img/portfolio/concerts/07-orla-gartland.jpg",
-  "thumb": "img/portfolio/_thumbs/concerts/07-orla-gartland.jpg",
+  "src": "img/portfolio/concerts/04-erra.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/04-erra.jpg",
+  "w": 1280,
+  "h": 853,
+  "cat": "concerts",
+  "label": "Erra"
+ },
+ {
+  "src": "img/portfolio/concerts/05-orla-gartland.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/05-orla-gartland.jpg",
+  "w": 1342,
+  "h": 1920,
+  "cat": "concerts",
+  "label": "Orla Gartland"
+ },
+ {
+  "src": "img/portfolio/concerts/06-wage-war.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/06-wage-war.jpg",
+  "w": 683,
+  "h": 1024,
+  "cat": "concerts",
+  "label": "Wage War"
+ },
+ {
+  "src": "img/portfolio/concerts/07-fightclub.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/07-fightclub.jpg",
+  "w": 1280,
+  "h": 1920,
+  "cat": "concerts",
+  "label": "Fightclub"
+ },
+ {
+  "src": "img/portfolio/concerts/08-orla-gartland.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/08-orla-gartland.jpg",
+  "w": 1376,
+  "h": 1920,
+  "cat": "concerts",
+  "label": "Orla Gartland"
+ },
+ {
+  "src": "img/portfolio/concerts/09-earthside.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/09-earthside.jpg",
+  "w": 1280,
+  "h": 950,
+  "cat": "concerts",
+  "label": "Earthside"
+ },
+ {
+  "src": "img/portfolio/concerts/10-earthside.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/10-earthside.jpg",
+  "w": 880,
+  "h": 1280,
+  "cat": "concerts",
+  "label": "Earthside"
+ },
+ {
+  "src": "img/portfolio/concerts/11-fame-on-fire.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/11-fame-on-fire.jpg",
+  "w": 853,
+  "h": 1280,
+  "cat": "concerts",
+  "label": "Fame On Fire"
+ },
+ {
+  "src": "img/portfolio/concerts/12-hudson-westbrook.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/12-hudson-westbrook.jpg",
+  "w": 1280,
+  "h": 1920,
+  "cat": "concerts",
+  "label": "Hudson Westbrook"
+ },
+ {
+  "src": "img/portfolio/concerts/13-latto.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/13-latto.jpg",
+  "w": 1280,
+  "h": 1920,
+  "cat": "concerts",
+  "label": "Latto"
+ },
+ {
+  "src": "img/portfolio/concerts/14-orla-gartland.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/14-orla-gartland.jpg",
+  "w": 1346,
+  "h": 1920,
+  "cat": "concerts",
+  "label": "Orla Gartland"
+ },
+ {
+  "src": "img/portfolio/concerts/15-ryan-stevenson--cain--terrian--crowder.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/15-ryan-stevenson--cain--terrian--crowder.jpg",
+  "w": 1400,
+  "h": 933,
+  "cat": "concerts",
+  "label": "Ryan Stevenson & Cain & Terrian & Crowder"
+ },
+ {
+  "src": "img/portfolio/concerts/16-souljaboy.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/16-souljaboy.jpg",
+  "w": 853,
+  "h": 1280,
+  "cat": "concerts",
+  "label": "Souljaboy"
+ },
+ {
+  "src": "img/portfolio/concerts/17-tobymac.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/17-tobymac.jpg",
+  "w": 1280,
+  "h": 1920,
+  "cat": "concerts",
+  "label": "Tobymac"
+ },
+ {
+  "src": "img/portfolio/concerts/18-tobymac.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/18-tobymac.jpg",
+  "w": 933,
+  "h": 1400,
+  "cat": "concerts",
+  "label": "Tobymac"
+ },
+ {
+  "src": "img/portfolio/concerts/19-latto.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/19-latto.jpg",
+  "w": 849,
+  "h": 1400,
+  "cat": "concerts",
+  "label": "Latto"
+ },
+ {
+  "src": "img/portfolio/concerts/20-airbornetoxicevent.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/20-airbornetoxicevent.jpg",
+  "w": 860,
+  "h": 1280,
+  "cat": "concerts",
+  "label": "Airbornetoxicevent"
+ },
+ {
+  "src": "img/portfolio/concerts/21-wage-war.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/21-wage-war.jpg",
+  "w": 683,
+  "h": 1024,
+  "cat": "concerts",
+  "label": "Wage War"
+ },
+ {
+  "src": "img/portfolio/concerts/22-souljaboy.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/22-souljaboy.jpg",
+  "w": 853,
+  "h": 1280,
+  "cat": "concerts",
+  "label": "Souljaboy"
+ },
+ {
+  "src": "img/portfolio/concerts/23-orla-gartland.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/23-orla-gartland.jpg",
   "w": 1400,
   "h": 933,
   "cat": "concerts",
   "label": "Orla Gartland"
  },
  {
-  "src": "img/portfolio/concerts/08-foushee.jpg",
-  "thumb": "img/portfolio/_thumbs/concerts/08-foushee.jpg",
+  "src": "img/portfolio/concerts/24-foushee.jpg",
+  "thumb": "img/portfolio/_thumbs/concerts/24-foushee.jpg",
   "w": 933,
   "h": 1400,
   "cat": "concerts",

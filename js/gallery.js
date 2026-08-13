@@ -30,7 +30,6 @@
     const g = visible[index];
     document.getElementById("lbImg").src = g.src;
     document.getElementById("lbImg").alt = g.label;
-    document.getElementById("lbCaption").textContent = `${pretty(g.cat)} — ${g.label}`;
   }
   const step = (d) => { index = (index + d + visible.length) % visible.length; show(); };
 
