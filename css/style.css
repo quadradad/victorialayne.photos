@@ -136,6 +136,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
 
 .nav-drop-btn:hover { color: var(--accent); }
 
+.nav-drop-btn::after { content: " ▾"; }
+
 .drop-menu {
   display: none;
   position: absolute;
@@ -165,7 +167,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
 .nav-dropdown:focus-within .drop-menu,
 .nav-dropdown.open .drop-menu { display: flex; }
 
-.drop-menu a { padding: 9px 20px; }
+.drop-menu a { padding: 9px 20px; white-space: nowrap; }
 
 .drop-menu a[aria-current="page"] { color: var(--accent); }
 
@@ -559,6 +561,7 @@ section { padding: 72px 0; }
     right: 0;
     background: var(--cream);
     flex-direction: column;
+    align-items: flex-start;
     padding: 24px;
     gap: 18px;
     border-bottom: 1px solid rgba(51, 48, 44, 0.08);
@@ -568,8 +571,18 @@ section { padding: 72px 0; }
 
   .nav-toggle { display: block; }
 
-  /* dropdown flattens into the mobile menu */
+  /* dropdown flattens into a labeled group: top-level links sit at the
+     left edge; session types indent underneath a static "Sessions" label */
   .nav-dropdown { position: static; }
+
+  .nav-drop-btn {
+    pointer-events: none; /* group label on mobile, not a button */
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    color: var(--sage);
+  }
+
+  .nav-drop-btn::after { content: none; }
 
   .drop-menu {
     display: flex;
@@ -578,9 +591,18 @@ section { padding: 72px 0; }
     background: transparent;
     border: 0;
     box-shadow: none;
-    padding: 6px 0 0 16px;
+    min-width: 0;
+    padding: 12px 0 0 18px;
     gap: 14px;
   }
 
-  .nav-drop-btn { display: none; }
+  .drop-menu::before { content: none; } /* hover bridge not needed here */
+
+  .drop-menu a { padding: 0; }
+
+  .drop-menu a::before {
+    content: "–";
+    color: var(--accent);
+    margin-right: 10px;
+  }
 }
