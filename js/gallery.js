@@ -1,9 +1,11 @@
 // Gallery engine: powers the full portfolio page (filters) AND per-page
-// embeds (<div class="masonry" data-gallery-cat="seniors" data-gallery-limit="8">).
+// embeds (<div class="masonry" data-gallery-cat="portraits" data-gallery-limit="8">).
 // Data comes from gallery-data.js (regenerate with tools/build_gallery.py).
 
 (function () {
-  const pretty = (c) => c.charAt(0).toUpperCase() + c.slice(1);
+  const pretty = (c) =>
+    (typeof GALLERY_LABELS !== "undefined" && GALLERY_LABELS[c]) ||
+    c.charAt(0).toUpperCase() + c.slice(1);
 
   // ---------- lightbox (shared) ----------
   const lightbox = document.getElementById("lightbox");

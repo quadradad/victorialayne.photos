@@ -18,7 +18,7 @@ const CONTACT_EMAIL = "victoria@victorialayne.photos";
 
   function setNote(text, ok) {
     note.textContent = text;
-    note.style.color = ok ? "var(--sage)" : "var(--terracotta)";
+    note.style.color = ok ? "var(--sage)" : "var(--accent-deep)";
   }
 
   if (!FORMSPREE_ID) {

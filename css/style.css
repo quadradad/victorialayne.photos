@@ -1,7 +1,8 @@
 /* Victoria Layne Photos — design system
    Brand: warm, light, natural (see kb/Brand Direction.md)
-   Palette: cream base, charcoal text, dusty blue + sage + prairie gold accents
-   (accent switched terracotta -> dusty blue 2026-08-13 per Victoria; contrast-validated) */
+   Palette: cream base, charcoal text, dusty blue + sage accents
+   (accent terracotta -> dusty blue, gold scrubbed -> blue family 2026-08-13 per Victoria;
+   all pairings contrast-validated: accent 4.6:1 on cream, accent-light 6.8:1 on charcoal) */
 
 :root {
   --cream: #faf6ef;
@@ -11,7 +12,7 @@
   --accent: #4a768f;
   --accent-deep: #385c74;
   --sage: #8b9a7d;
-  --gold: #d9a441;
+  --accent-light: #9dc0d5;
   --white: #fffdf9;
 
   --serif: "Cormorant Garamond", Georgia, serif;
@@ -193,7 +194,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
-  background: linear-gradient(135deg, var(--cream-deep) 0%, #e8d9bf 45%, #d9b98a 100%);
+  background: linear-gradient(135deg, var(--cream-deep) 0%, #dfe7ec 45%, #c2d3de 100%);
   box-shadow: var(--shadow);
   display: flex;
   align-items: flex-end;
@@ -204,7 +205,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 70% 20%, rgba(217, 164, 65, 0.35), transparent 55%),
+    radial-gradient(ellipse at 70% 20%, rgba(157, 192, 213, 0.35), transparent 55%),
     radial-gradient(ellipse at 20% 85%, rgba(139, 154, 125, 0.28), transparent 60%);
 }
 
@@ -243,7 +244,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
   flex-direction: column;
 }
 
-.price-card.featured { outline: 2px solid var(--gold); }
+.price-card.featured { outline: 2px solid var(--accent); }
 
 .price-card h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
 
@@ -322,7 +323,7 @@ section { padding: 72px 0; }
   display: block;
   font-family: var(--serif);
   font-size: 2.2rem;
-  color: var(--gold);
+  color: var(--accent);
   margin-bottom: 0.5rem;
 }
 
@@ -354,7 +355,7 @@ section { padding: 72px 0; }
 }
 
 .concerts .ph::before {
-  background: radial-gradient(ellipse at 60% 30%, rgba(217, 164, 65, 0.25), transparent 55%);
+  background: radial-gradient(ellipse at 60% 30%, rgba(157, 192, 213, 0.25), transparent 55%);
 }
 
 .concerts .ph span { color: rgba(250, 246, 239, 0.5); }
@@ -390,7 +391,7 @@ section { padding: 72px 0; }
   margin-top: 1.5rem;
   padding: 16px 18px;
   background: var(--cream);
-  border-left: 3px solid var(--gold);
+  border-left: 3px solid var(--accent);
   border-radius: 0 var(--radius) var(--radius) 0;
   font-size: 0.9rem;
   color: var(--charcoal-soft);
@@ -496,7 +497,7 @@ section { padding: 72px 0; }
   z-index: 101;
 }
 
-.lb-close:hover, .lb-prev:hover, .lb-next:hover { color: var(--gold); }
+.lb-close:hover, .lb-prev:hover, .lb-next:hover { color: var(--accent-light); }
 
 .lb-close { top: 12px; right: 16px; }
 .lb-prev { left: 8px; top: 50%; transform: translateY(-50%); }
