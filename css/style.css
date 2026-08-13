@@ -1,14 +1,15 @@
 /* Victoria Layne Photos — design system
    Brand: warm, light, natural (see kb/Brand Direction.md)
-   Palette: cream base, charcoal text, terracotta + sage + prairie gold accents */
+   Palette: cream base, charcoal text, dusty blue + sage + prairie gold accents
+   (accent switched terracotta -> dusty blue 2026-08-13 per Victoria; contrast-validated) */
 
 :root {
   --cream: #faf6ef;
   --cream-deep: #f3ecdf;
   --charcoal: #33302c;
   --charcoal-soft: #5c564e;
-  --terracotta: #c06b3e;
-  --terracotta-deep: #a5552e;
+  --accent: #4a768f;
+  --accent-deep: #385c74;
   --sage: #8b9a7d;
   --gold: #d9a441;
   --white: #fffdf9;
@@ -36,8 +37,8 @@ body {
 
 img { max-width: 100%; display: block; }
 
-a { color: var(--terracotta); text-decoration: none; }
-a:hover { color: var(--terracotta-deep); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-deep); }
 
 h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
 
@@ -49,7 +50,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
   letter-spacing: 0.22em;
   font-size: 0.72rem;
   font-weight: 400;
-  color: var(--terracotta);
+  color: var(--accent);
   margin-bottom: 0.75rem;
 }
 
@@ -78,7 +79,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
   color: var(--charcoal);
 }
 
-.wordmark em { font-style: italic; color: var(--terracotta); }
+.wordmark em { font-style: italic; color: var(--accent); }
 
 .site-nav { display: flex; align-items: center; gap: 28px; }
 
@@ -89,11 +90,11 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
   letter-spacing: 0.12em;
 }
 
-.site-nav a:hover { color: var(--terracotta); }
+.site-nav a:hover { color: var(--accent); }
 
 .btn {
   display: inline-block;
-  background: var(--terracotta);
+  background: var(--accent);
   color: var(--white) !important;
   padding: 0.7rem 1.5rem;
   border-radius: 999px;
@@ -103,15 +104,15 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
   transition: background 0.2s ease;
 }
 
-.btn:hover { background: var(--terracotta-deep); }
+.btn:hover { background: var(--accent-deep); }
 
 .btn.ghost {
   background: transparent;
-  color: var(--terracotta) !important;
-  border: 1px solid var(--terracotta);
+  color: var(--accent) !important;
+  border: 1px solid var(--accent);
 }
 
-.btn.ghost:hover { background: var(--terracotta); color: var(--white) !important; }
+.btn.ghost:hover { background: var(--accent); color: var(--white) !important; }
 
 .nav-toggle { display: none; background: none; border: 0; font-size: 1.5rem; color: var(--charcoal); cursor: pointer; }
 
@@ -132,7 +133,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
   padding: 0;
 }
 
-.nav-drop-btn:hover { color: var(--terracotta); }
+.nav-drop-btn:hover { color: var(--accent); }
 
 .drop-menu {
   display: none;
@@ -165,7 +166,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
 
 .drop-menu a { padding: 9px 20px; }
 
-.drop-menu a[aria-current="page"] { color: var(--terracotta); }
+.drop-menu a[aria-current="page"] { color: var(--accent); }
 
 /* ---------- hero ---------- */
 
@@ -180,7 +181,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
 
 .hero h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); margin-bottom: 1.25rem; }
 
-.hero h1 em { font-style: italic; color: var(--terracotta); }
+.hero h1 em { font-style: italic; color: var(--accent); }
 
 .hero p.lede { font-size: 1.1rem; color: var(--charcoal-soft); max-width: 34rem; margin-bottom: 2rem; }
 
@@ -246,7 +247,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; }
 
 .price-card h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
 
-.price-card .price { font-family: var(--serif); font-size: 2rem; color: var(--terracotta); margin-bottom: 0.75rem; }
+.price-card .price { font-family: var(--serif); font-size: 2rem; color: var(--accent); margin-bottom: 0.75rem; }
 
 .price-card .price small { font-size: 0.9rem; color: var(--charcoal-soft); }
 
@@ -442,9 +443,9 @@ section { padding: 72px 0; }
   transition: all 0.15s ease;
 }
 
-.filter-pill:hover { border-color: var(--terracotta); color: var(--terracotta); }
+.filter-pill:hover { border-color: var(--accent); color: var(--accent); }
 
-.filter-pill.active { background: var(--terracotta); border-color: var(--terracotta); color: var(--white); }
+.filter-pill.active { background: var(--accent); border-color: var(--accent); color: var(--white); }
 
 .masonry { columns: 3; column-gap: 18px; }
 
