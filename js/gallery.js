@@ -51,9 +51,16 @@
     el.innerHTML = "";
     items.forEach((g, i) => {
       const img = document.createElement("img");
-      img.src = g.src;
+      // width/height reserve layout space before load — no page jumping
+      if (g.w && g.h) { img.width = g.w; img.height = g.h; }
       img.alt = `${pretty(g.cat)} — ${g.label}`;
       img.loading = "lazy";
+      img.decoding = "async";
+      const reveal = () => img.classList.add("loaded");
+      img.addEventListener("load", reveal, { once: true });
+      img.addEventListener("error", reveal, { once: true });
+      img.src = g.thumb || g.src; // grid loads the small thumb; lightbox loads full-size
+      if (img.complete) reveal();
       img.addEventListener("click", () => open(items, i));
       el.appendChild(img);
     });

@@ -1,20 +1,36 @@
 #!/usr/bin/env python3
-"""Regenerate js/gallery-data.js from the contents of img/portfolio/.
+"""Regenerate js/gallery-data.js from img/portfolio/ and maintain grid thumbnails.
 
-Usage: python3 tools/build_gallery.py  (run from the website/ root)
+Usage: python3 tools/build_gallery.py   (run from anywhere; needs Pillow)
 
-Pattern: drop optimized JPGs into img/portfolio/<category>/, named
-NN-description.jpg (NN controls display order), then run this script
-and commit. Categories appear as filters in the order listed below;
-add a new category folder (e.g. weddings/) and it shows up automatically.
+Pattern: drop JPGs into img/portfolio/<category>/, named NN-description.jpg
+(NN controls display order; the description becomes the lightbox caption,
+"--" renders as " & "), then run this script and commit.
+
+What it does:
+- scans the category folders (skips _thumbs/)
+- creates/updates img/portfolio/_thumbs/<category>/<file>: 720px-wide
+  progressive JPEGs (q80) that the masonry grids load; the lightbox
+  loads the full-size original
+- prunes thumbs whose source photo was deleted
+- emits js/gallery-data.js with categories, display labels, and per-image
+  {src, thumb, w, h, cat, label}; w/h let the browser reserve space
+  before images load, so pages don't jump around
 """
 import json
 import os
 import re
 
+from PIL import Image
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORTFOLIO = os.path.join(ROOT, "img", "portfolio")
+THUMBS = os.path.join(PORTFOLIO, "_thumbs")
 OUT = os.path.join(ROOT, "js", "gallery-data.js")
+
+THUMB_WIDTH = 720  # ~2x rendered column width; retina-sharp, small file
+THUMB_QUALITY = 80
+EXTS = (".jpg", ".jpeg", ".webp", ".png")
 
 # preferred filter order; unknown folders get appended alphabetically
 CATEGORY_ORDER = ["portraits", "couples", "weddings-events", "families", "headshots", "concerts"]
@@ -22,28 +38,74 @@ CATEGORY_ORDER = ["portraits", "couples", "weddings-events", "families", "headsh
 # display-label overrides; anything else gets "-"->" " + Title Case
 LABELS = {"weddings-events": "Weddings & Events"}
 
+
 def label_from_filename(name: str) -> str:
     stem = os.path.splitext(name)[0]
     stem = re.sub(r"^\d+-", "", stem)          # drop NN- ordering prefix
     stem = stem.replace("--", " & ").replace("-", " ")
     return stem.title()
 
+
+def ensure_thumb(cat: str, fname: str) -> tuple:
+    """Create/update the thumbnail for one photo; return the full image's (w, h)."""
+    src = os.path.join(PORTFOLIO, cat, fname)
+    dst_dir = os.path.join(THUMBS, cat)
+    os.makedirs(dst_dir, exist_ok=True)
+    dst = os.path.join(dst_dir, os.path.splitext(fname)[0] + ".jpg")
+    with Image.open(src) as im:
+        w, h = im.size
+        if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+            t = im.convert("RGB")
+            if w > THUMB_WIDTH:
+                t = t.resize((THUMB_WIDTH, round(h * THUMB_WIDTH / w)), Image.LANCZOS)
+            t.save(dst, "JPEG", quality=THUMB_QUALITY, progressive=True, optimize=True)
+    return w, h
+
+
+def prune_thumbs(cats: list) -> int:
+    """Delete thumbs whose source photo no longer exists."""
+    removed = 0
+    if not os.path.isdir(THUMBS):
+        return removed
+    for cat in os.listdir(THUMBS):
+        cdir = os.path.join(THUMBS, cat)
+        if not os.path.isdir(cdir):
+            continue
+        src_dir = os.path.join(PORTFOLIO, cat)
+        live = set()
+        if os.path.isdir(src_dir) and cat in cats:
+            live = {os.path.splitext(f)[0] for f in os.listdir(src_dir)
+                    if f.lower().endswith(EXTS)}
+        for f in os.listdir(cdir):
+            if os.path.splitext(f)[0] not in live:
+                os.remove(os.path.join(cdir, f))
+                removed += 1
+        if not os.listdir(cdir):
+            os.rmdir(cdir)
+    return removed
+
+
 def main() -> None:
     cats = [d for d in sorted(os.listdir(PORTFOLIO))
-            if os.path.isdir(os.path.join(PORTFOLIO, d))]
+            if os.path.isdir(os.path.join(PORTFOLIO, d)) and d != "_thumbs"]
     cats.sort(key=lambda c: (CATEGORY_ORDER.index(c) if c in CATEGORY_ORDER else 99, c))
 
     items = []
     for cat in cats:
         d = os.path.join(PORTFOLIO, cat)
         for f in sorted(os.listdir(d)):
-            if f.lower().endswith((".jpg", ".jpeg", ".webp", ".png")):
+            if f.lower().endswith(EXTS):
+                w, h = ensure_thumb(cat, f)
                 items.append({
                     "src": f"img/portfolio/{cat}/{f}",
+                    "thumb": f"img/portfolio/_thumbs/{cat}/{os.path.splitext(f)[0]}.jpg",
+                    "w": w,
+                    "h": h,
                     "cat": cat,
                     "label": label_from_filename(f),
                 })
 
+    pruned = prune_thumbs(cats)
     labels = {c: LABELS.get(c, c.replace("-", " ").title()) for c in cats}
 
     with open(OUT, "w") as fh:
@@ -51,7 +113,9 @@ def main() -> None:
         fh.write(f"const GALLERY_CATEGORIES = {json.dumps(cats)};\n")
         fh.write(f"const GALLERY_LABELS = {json.dumps(labels)};\n")
         fh.write(f"const GALLERY = {json.dumps(items, indent=1)};\n")
-    print(f"{len(items)} images across {len(cats)} categories -> {os.path.relpath(OUT, ROOT)}")
+    print(f"{len(items)} images across {len(cats)} categories -> {os.path.relpath(OUT, ROOT)}"
+          + (f" ({pruned} stale thumbs pruned)" if pruned else ""))
+
 
 if __name__ == "__main__":
     main()

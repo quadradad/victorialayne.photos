@@ -452,13 +452,18 @@ section { padding: 72px 0; }
 
 .masonry img {
   width: 100%;
+  height: auto; /* preserves the aspect ratio from the width/height attributes */
   margin-bottom: 18px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  background: var(--cream-deep); /* soft placeholder tone while loading */
   cursor: zoom-in;
   display: block;
-  transition: transform 0.15s ease;
+  opacity: 0;
+  transition: opacity 0.35s ease, transform 0.15s ease;
 }
+
+.masonry img.loaded { opacity: 1; }
 
 .masonry img:hover { transform: scale(1.015); }
 
